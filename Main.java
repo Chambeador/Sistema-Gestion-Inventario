@@ -214,7 +214,7 @@ public class Main {
         System.out.println(" Laptop 10% : " + calculadora.calcularPrecioFinal(inventario.buscar("P02")));
         System.out.println(" PC: " + calculadora.calcularPrecioFinal(inventario.buscar("P03")));
         System.out.println("\nMOVIMIENTOS DE STOCK ");
-        // Retiramos 1 laptop (tenía 2, queda 1 -> ¡Debe saltar la alerta del Observer!)
+        // Retiramos 1 laptop (tenía 2, queda 1 observer deberia de lanzar mensaje)
         System.out.println(servicio.realizarMovimiento("P02", 1, new SalidaStock()));
         System.out.println();
         System.out.println(servicio.realizarMovimiento("P01", 2, new EntradaStock()));
